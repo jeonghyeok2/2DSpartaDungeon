@@ -40,12 +40,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void HitCheckObject(RaycastHit2D raycastHit)
-    {
-        Slot slotItem = raycastHit.transform.gameObject.GetComponent<Slot>();
-        Debug.Log(slotItem.item.name);
-    }
-
     public void AddItemCountOverCheck(ItemData _item) //상점에서 아이템 구매시
     {
         if (items.Count < slots.Length)
