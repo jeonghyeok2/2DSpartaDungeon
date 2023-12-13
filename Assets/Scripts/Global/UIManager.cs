@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI _speedTxt;
 
     public GameObject player;
-    CharacterStatsHandler _characterStatsHandler;
+    public CharacterStatsHandler _characterStatsHandler;
 
     [SerializeField] private GameObject _status;
     [SerializeField] private GameObject _statusWindow;

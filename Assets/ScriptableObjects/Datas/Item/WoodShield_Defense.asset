@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8ff3bdf62bfc6a479965e886d152d84, type: 3}
-  m_Name: DefaultPlayerData
+  m_Script: {fileID: 11500000, guid: 0ad54421b969b1c469331f86bcd44f0d, type: 3}
+  m_Name: WoodShield_Defense
   m_EditorClassIdentifier: 
-  _health: 100
-  _attack: 35
-  _speed: 10
-  _defense: 40
-  _gold: 20000
+  itemName: WoodShield
+  itemType: 1
+  itemImage: {fileID: 973861216, guid: 8cfcc51901a7d884393dc0d985243262, type: 3}
+  statusValue: 5
