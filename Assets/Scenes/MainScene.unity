@@ -1567,7 +1567,9 @@ MonoBehaviour:
   _status: {fileID: 1992835668}
   _statusWindow: {fileID: 2090258865}
   _inventory: {fileID: 1763869804}
-  _exitBtn: {fileID: 1495936575}
+  _inventoryWindow: {fileID: 1762414133}
+  _exitStatusBtn: {fileID: 1495936575}
+  _exitInvenBtn: {fileID: 1686812673}
 --- !u!4 &1312009048
 Transform:
   m_ObjectHideFlags: 0
@@ -3005,8 +3007,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -199, y: -4}
-  m_SizeDelta: {x: 100, y: -50}
+  m_AnchoredPosition: {x: -164.8572, y: -2.5155}
+  m_SizeDelta: {x: 168.2858, y: -52.969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1701753987
 MonoBehaviour:
@@ -3120,7 +3122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1762414134
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3277,7 +3279,7 @@ GameObject:
   - component: {fileID: 1774772156}
   - component: {fileID: 1774772155}
   m_Layer: 5
-  m_Name: BackGorund
+  m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4414,7 +4416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2090258866
 RectTransform:
   m_ObjectHideFlags: 0

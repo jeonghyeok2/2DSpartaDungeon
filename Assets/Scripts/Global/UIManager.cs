@@ -22,7 +22,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _status;
     [SerializeField] private GameObject _statusWindow;
     [SerializeField] private GameObject _inventory;
-    [SerializeField] private Button _exitBtn;
+    [SerializeField] private GameObject _inventoryWindow;
+    [SerializeField] private Button _exitStatusBtn;
+    [SerializeField] private Button _exitInvenBtn;
 
     private void Awake()
     {
@@ -32,23 +34,24 @@ public class UIManager : MonoBehaviour
         Button _statusBtn = _status.GetComponent<Button>();
         Button _inventoryBtn = _inventory.GetComponent<Button>();
 
-        _statusBtn.onClick.AddListener(() => StatusWindowOpen());
-        _exitBtn.onClick.AddListener(() => ExitWindow());
+        _statusBtn.onClick.AddListener(() => StatusWindowOpen(_statusWindow));
+        _inventoryBtn.onClick.AddListener(() => StatusWindowOpen(_inventoryWindow));
+        _exitStatusBtn.onClick.AddListener(() => ExitWindow(_statusWindow));
+        _exitInvenBtn.onClick.AddListener(() => ExitWindow(_inventoryWindow));
     }
 
-    private void ExitWindow()
+    private void ExitWindow(GameObject windowObject)
     {
         _status.SetActive(true);
         _inventory.SetActive(true);
-        _statusWindow.SetActive(false);
-        //인벤토리 추가
+        windowObject.SetActive(false);
     }
 
-    private void StatusWindowOpen()
+    private void StatusWindowOpen(GameObject windowObject)
     {
         _status.SetActive(false);
         _inventory.SetActive(false);
-        _statusWindow.SetActive(true);
+        windowObject.SetActive(true);
         _characterStatsHandler.CallStatusEvent(_characterStatsHandler.playerSo);
     }
 

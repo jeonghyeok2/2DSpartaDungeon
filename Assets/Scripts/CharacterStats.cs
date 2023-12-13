@@ -10,7 +10,7 @@ public enum ItemType
     Health,
 }
 [Serializable]
-public class CharacterStats
+public class ItemStats
 {
     public ItemType itemType;
     public int _plusStatus;
